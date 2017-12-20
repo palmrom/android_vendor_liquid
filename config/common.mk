@@ -94,8 +94,8 @@ PRODUCT_COPY_FILES += \
     frameworks/base/data/keyboards/Vendor_045e_Product_028e.kl:system/usr/keylayout/Vendor_045e_Product_0719.kl
 
 # Include LiquidRemix boot animation
-PRODUCT_COPY_FILES += \
-    vendor/liquid/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
+#PRODUCT_COPY_FILES += \
+#    vendor/liquid/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
 
 # TWRP
 ifeq ($(WITH_TWRP),true)
@@ -172,7 +172,7 @@ endif
 $(call inherit-product-if-exists, vendor/liquid/prebuilt/common/prebuilt.mk)
 
 # Vendor Overlays
-DEVICE_PACKAGE_OVERLAYS += vendor/liquid/overlay/common
+#DEVICE_PACKAGE_OVERLAYS += vendor/liquid/overlay/common
 
 # Version System
 PRODUCT_VERSION_MAJOR = 8
